@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.EditUser">
+   <children>
+      <Button fx:id="button1" layoutX="353.0" layoutY="287.0" mnemonicParsing="false" onAction="#manageBooks" style="-fx-cursor: hand;" text="Manage 1st book" />
+      <GridPane layoutY="45.0" prefHeight="241.0" prefWidth="587.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="133.40003662109376" prefWidth="133.40003662109376" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.4" minWidth="10.0" prefWidth="171.39997558593754" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.4" minWidth="10.0" prefWidth="111.99998779296874" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.4" minWidth="10.0" prefWidth="166.40001220703124" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="txt_username" prefHeight="26.0" prefWidth="192.0" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txt_password" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txt_firstname" promptText="FirstName" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txt_lastname" promptText="LastName" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="63.38909912109375" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LastName" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ADT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="txt_adt" promptText="Adt" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="txt_email" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="txt_numberofbooks" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Books borrowed" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2: Title" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2: ISBN" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="txt_title2" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="txt_isbn2" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User's Loans" underline="true" wrappingWidth="74.30902099609375" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Details" underline="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1: Title" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1: ISBN" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField fx:id="txt_title1" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="txt_isbn1" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="5.0" top="20.0" />
+         </padding>
+      </GridPane>
+      <Text layoutX="268.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit User">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="button2" layoutX="473.0" layoutY="287.0" mnemonicParsing="false" onAction="#manageBooks" style="-fx-cursor: hand;" text="Manage 2nd book" />
+      <Button layoutX="483.0" layoutY="352.0" mnemonicParsing="false" onAction="#EditClicked" style="-fx-background-color: #4CD582; -fx-cursor: hand;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="530.0" layoutY="352.0" mnemonicParsing="false" onAction="#CancelClicked" style="-fx-background-color: RED; -fx-cursor: hand;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="356.0" layoutY="319.0" prefHeight="18.0" prefWidth="233.0" textFill="#ffa700" />
+      <Label fx:id="user_label" layoutX="22.0" layoutY="279.0" prefHeight="18.0" prefWidth="274.0" textFill="RED" />
+   </children>
+</AnchorPane>
